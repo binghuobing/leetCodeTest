@@ -1,0 +1,179 @@
+# depslib dependency file v1.0
+1397567480 source:d:\testcode\leetcodetest\binarytree.cpp
+	<vector>
+	<stack>
+	"BinaryTree.h"
+	<queue>
+
+1397566578 d:\testcode\leetcodetest\binarytree.h
+	"TreeNode.h"
+	<vector>
+
+1397567469 d:\testcode\leetcodetest\treenode.h
+	<iostream>
+
+1397567476 source:d:\testcode\leetcodetest\combinations.cpp
+	<vector>
+
+1397565139 source:d:\testcode\leetcodetest\createbinarytree.cpp
+	"TreeNode.h"
+	<queue>
+	<iostream>
+
+1397565683 source:d:\testcode\leetcodetest\createtree.cpp
+	"TreeNode.h"
+	<queue>
+	<iostream>
+
+1400765438 source:d:\testcode\leetcodetest\main.cpp
+	<iostream>
+	"myTools.h"
+	<vector>
+	"BinaryTree.h"
+	"SumPath.h"
+	"LinkList.h"
+	"BinaryString.h"
+
+1397565171 source:d:\testcode\leetcodetest\printdoublevector.cpp
+	<vector>
+	<iostream>
+
+1397569586 source:d:\testcode\leetcodetest\mytools.cpp
+	<vector>
+	<iostream>
+	"myTools.h"
+
+1397571801 d:\testcode\leetcodetest\mytools.h
+	<vector>
+	<iostream>
+	"TreeNode.h"
+
+1397567568 source:d:\testcode\leetcodetest\src\leetcode.cpp
+	"LeetCode.h"
+
+1397567568 d:\testcode\leetcodetest\include\leetcode.h
+
+1397571580 source:d:\testcode\leetcodetest\traprainwater.cpp
+	<iostream>
+
+1397573768 source:d:\testcode\leetcodetest\validparenthese.cpp
+	<stack>
+	<string>
+
+1400587583 d:\testcode\leetcodetest\include\mytools.h
+	<vector>
+	<iostream>
+	"TreeNode.h"
+
+1400572952 d:\testcode\leetcodetest\include\treenode.h
+	<iostream>
+
+1400587479 d:\testcode\leetcodetest\include\binarytree.h
+	"TreeNode.h"
+	<vector>
+
+1399986271 d:\testcode\leetcodetest\include\sudoku.h
+	<vector>
+
+1397567476 source:d:\testcode\leetcodetest\src\combinations.cpp
+	<vector>
+
+1399986671 source:d:\testcode\leetcodetest\src\mathproblems\sudoku.cpp
+	"Sudoku.h"
+
+1397573948 source:d:\testcode\leetcodetest\src\mathproblems\validparenthese.cpp
+	<stack>
+	<string>
+
+1400587438 source:d:\testcode\leetcodetest\src\mytools.cpp
+	<vector>
+	<iostream>
+	"myTools.h"
+
+1397571580 source:d:\testcode\leetcodetest\src\traprainwater.cpp
+	<iostream>
+
+1399988210 source:d:\testcode\leetcodetest\src\tree\binarytree.cpp
+	<vector>
+	<stack>
+	"BinaryTree.h"
+	<queue>
+
+1399990883 d:\testcode\leetcodetest\include\sets.h
+	<vector>
+
+1399991539 source:d:\testcode\leetcodetest\src\sets.cpp
+	"Sets.h"
+	<algorithm>
+
+1400572327 d:\testcode\leetcodetest\include\matrixpath.h
+	<vector>
+	<iostream>
+
+1400587598 source:d:\testcode\leetcodetest\src\binarytree.cpp
+	<vector>
+	<stack>
+	"BinaryTree.h"
+	<queue>
+
+1400572773 source:d:\testcode\leetcodetest\src\matrixpath.cpp
+	"MatrixPath.h"
+
+1399986671 source:d:\testcode\leetcodetest\src\sudoku.cpp
+	"Sudoku.h"
+
+1397573948 source:d:\testcode\leetcodetest\src\validparenthese.cpp
+	<stack>
+	<string>
+
+1400576194 d:\testcode\leetcodetest\include\sumpath.h
+	"BinaryTree.h"
+
+1400581095 source:d:\testcode\leetcodetest\src\sumpath.cpp
+	"SumPath.h"
+	"myTools.h"
+	<stack>
+
+1400585702 source:d:\testcode\leetcodetest\src\listnode.cpp
+	"ListNode.h"
+
+1400586776 d:\testcode\leetcodetest\include\listnode.h
+
+1400767127 d:\testcode\leetcodetest\include\linklist.h
+	"listNode.h"
+	"TreeNode.h"
+
+1400770628 source:d:\testcode\leetcodetest\src\linklist.cpp
+	"LinkList.h"
+	<iostream>
+	"BinaryTree.h"
+	"myTools.h"
+
+1400657878 source:d:\testcode\leetcodetest\src\bst.cpp
+	"BST.h"
+
+1400657668 d:\testcode\leetcodetest\include\bst.h
+	<BinaryTree.h>
+
+1400658241 source:d:\testcode\leetcodetest\src\stringre.cpp
+	"StringRe.h"
+
+1400659599 d:\testcode\leetcodetest\include\stringre.h
+	<string>
+	<vector>
+
+1400659952 source:d:\testcode\leetcodetest\src\vecstring.cpp
+	"VecString.h"
+	<iostream>
+
+1400659877 d:\testcode\leetcodetest\include\vecstring.h
+	<vector>
+	<string>
+
+1400726033 d:\testcode\leetcodetest\include\binarystring.h
+	<string>
+
+1400726442 source:d:\testcode\leetcodetest\src\binarystring.cpp
+	"BinaryString.h"
+	<iostream>
+
