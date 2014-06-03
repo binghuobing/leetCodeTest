@@ -25,14 +25,14 @@
 	<queue>
 	<iostream>
 
-1400765438 source:d:\testcode\leetcodetest\main.cpp
+1401799282 source:d:\testcode\leetcodetest\main.cpp
 	<iostream>
 	"myTools.h"
 	<vector>
 	"BinaryTree.h"
-	"SumPath.h"
 	"LinkList.h"
 	"BinaryString.h"
+	"Permutation.h"
 
 1397565171 source:d:\testcode\leetcodetest\printdoublevector.cpp
 	<vector>
@@ -68,7 +68,7 @@
 1400572952 d:\testcode\leetcodetest\include\treenode.h
 	<iostream>
 
-1400587479 d:\testcode\leetcodetest\include\binarytree.h
+1401453765 d:\testcode\leetcodetest\include\binarytree.h
 	"TreeNode.h"
 	<vector>
 
@@ -85,10 +85,11 @@
 	<stack>
 	<string>
 
-1400587438 source:d:\testcode\leetcodetest\src\mytools.cpp
+1401799502 source:d:\testcode\leetcodetest\src\mytools.cpp
 	<vector>
 	<iostream>
 	"myTools.h"
+	<algorithm>
 
 1397571580 source:d:\testcode\leetcodetest\src\traprainwater.cpp
 	<iostream>
@@ -110,11 +111,12 @@
 	<vector>
 	<iostream>
 
-1400587598 source:d:\testcode\leetcodetest\src\binarytree.cpp
+1401455056 source:d:\testcode\leetcodetest\src\binarytree.cpp
 	<vector>
 	<stack>
 	"BinaryTree.h"
 	<queue>
+	"myTools.h"
 
 1400572773 source:d:\testcode\leetcodetest\src\matrixpath.cpp
 	"MatrixPath.h"
@@ -134,16 +136,16 @@
 	"myTools.h"
 	<stack>
 
-1400585702 source:d:\testcode\leetcodetest\src\listnode.cpp
+1401718445 source:d:\testcode\leetcodetest\src\listnode.cpp
 	"ListNode.h"
 
-1400586776 d:\testcode\leetcodetest\include\listnode.h
+1401718444 d:\testcode\leetcodetest\include\listnode.h
 
-1400767127 d:\testcode\leetcodetest\include\linklist.h
+1401793664 d:\testcode\leetcodetest\include\linklist.h
 	"listNode.h"
 	"TreeNode.h"
 
-1400770628 source:d:\testcode\leetcodetest\src\linklist.cpp
+1401795121 source:d:\testcode\leetcodetest\src\linklist.cpp
 	"LinkList.h"
 	<iostream>
 	"BinaryTree.h"
@@ -176,4 +178,28 @@
 1400726442 source:d:\testcode\leetcodetest\src\binarystring.cpp
 	"BinaryString.h"
 	<iostream>
+
+1401613907 source:d:\testcode\leetcodetest\src\sequence.cpp
+	"Sequence.h"
+	<set>
+	<iostream>
+
+1401612611 d:\testcode\leetcodetest\include\sequence.h
+	<vector>
+
+1401699365 d:\testcode\leetcodetest\include\permutation.h
+
+1401699363 source:d:\testcode\leetcodetest\src\permutaion.cpp
+	"Permutation.h"
+	<iostream>
+	<vector>
+	"myTools.h"
+
+1401799521 source:d:\testcode\leetcodetest\src\combinationsum.cpp
+	"CombinationSum.h"
+	<algorithm>
+	"myTools.h"
+
+1401799126 d:\testcode\leetcodetest\include\combinationsum.h
+	<vector>
 

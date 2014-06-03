@@ -5,6 +5,7 @@
 		<Option title="leetCodeTest" />
 		<Option pch_mode="2" />
 		<Option compiler="gcc" />
+		<Option virtualFolders="include\;" />
 		<Build>
 			<Target title="Debug">
 				<Option output="bin/Debug/leetCodeTest" prefix_auto="1" extension_auto="1" />
@@ -34,12 +35,17 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
+		<Unit filename="Permutation.h">
+			<Option virtualFolder="include/" />
+		</Unit>
 		<Unit filename="include/BST.h" />
 		<Unit filename="include/BinaryString.h" />
 		<Unit filename="include/BinaryTree.h" />
 		<Unit filename="include/LinkList.h" />
 		<Unit filename="include/ListNode.h" />
 		<Unit filename="include/MatrixPath.h" />
+		<Unit filename="include/Permutation.h" />
+		<Unit filename="include/Sequence.h" />
 		<Unit filename="include/Sets.h" />
 		<Unit filename="include/StringRe.h" />
 		<Unit filename="include/Sudoku.h" />
@@ -55,6 +61,8 @@
 		<Unit filename="src/LinkList.cpp" />
 		<Unit filename="src/ListNode.cpp" />
 		<Unit filename="src/MatrixPath.cpp" />
+		<Unit filename="src/Permutaion.cpp" />
+		<Unit filename="src/Sequence.cpp" />
 		<Unit filename="src/Sets.cpp" />
 		<Unit filename="src/StringRe.cpp" />
 		<Unit filename="src/Sudoku.cpp" />

@@ -3,7 +3,7 @@
 #pragma once
 #include "TreeNode.h"
 #include <vector>
-
+using std::vector;
 class BinaryTree
 {
 public:
@@ -16,8 +16,9 @@ public:
     virtual ~BinaryTree();
 protected:
     TreeNode *root;
-    int nodeNum;
+    //int nodeNum;
 private:
     TreeNode *createTree();
+
 };
 

@@ -5,8 +5,7 @@
 class ListNode
 {
     public:
-        ListNode();
-        ListNode(int v, ListNode *nex);
+        ListNode(int v, ListNode *nex = nullptr);
         virtual ~ListNode();
 
         int val;

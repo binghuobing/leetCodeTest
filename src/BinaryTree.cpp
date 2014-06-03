@@ -2,6 +2,7 @@
 #include<stack>
 #include "BinaryTree.h"
 #include<queue>
+#include "myTools.h"
 
 using std::vector;
 using std::stack;
@@ -10,22 +11,25 @@ using std::cout;
 using std::cin;
 using std::endl;
 
-BinaryTree::BinaryTree(): nodeNum(0)
+typedef std::vector<int>::size_type visize;
+
+BinaryTree::BinaryTree()
 {
     root = createTree();
 }
 
-BinaryTree::BinaryTree(TreeNode *h): nodeNum(0), root(h)
+BinaryTree::BinaryTree(TreeNode *h): root(h)
 {
 }
 
-
 BinaryTree::~BinaryTree()
 {
-    if (root) {
+    if (root)
+    {
         queue<TreeNode* > que;
         que.push(root);
-        while(!que.empty()) {
+        while(!que.empty())
+        {
             TreeNode *p = que.front();
             if(p->left)
                 que.push(p->left);
@@ -52,7 +56,6 @@ TreeNode* BinaryTree::createTree()
 
     queue<TreeNode *> que;
     TreeNode *root = new TreeNode(a[0]);
-    this -> nodeNum ++;
 
     que.push(root);
     int i = 1;
@@ -130,26 +133,73 @@ vector<int> BinaryTree::preorderTraversal() const
     return vec;
 }
 
-vector<int> BinaryTree::inorderTraversal() const {
-        // better version
-        vector<int> vec;
-        if (!root)
-            return vec;
-        stack<TreeNode *> stk;
-        TreeNode *p = root;
-        while (p || !stk.empty() ) {
-            if (p) {
-                stk.push(p);
-                p = p->left;
-            } else {
-                p = stk.top();
-                stk.pop();
-                vec.push_back(p->val);
-                p = p->right;
-            }
-        }
+vector<int> BinaryTree::inorderTraversal() const
+{
+    // better version
+    vector<int> vec;
+    if (!root)
         return vec;
+    stack<TreeNode *> stk;
+    TreeNode *p = root;
+    while (p || !stk.empty() )
+    {
+        if (p)
+        {
+            stk.push(p);
+            p = p->left;
+        }
+        else
+        {
+            p = stk.top();
+            stk.pop();
+            vec.push_back(p->val);
+            p = p->right;
+        }
     }
+    return vec;
+}
 
+
+TreeNode* buildTreeHelper(const vector<int> &inorder, visize inBeg, visize inEnd,
+        const vector<int> &postorder, visize postBeg, visize postEnd )
+{
+    cout << "size 1: " <<inEnd - inBeg << " \t size 2: " << postEnd - postBeg << endl;
+    if(postBeg >= postEnd)
+        return nullptr;
+    int rootVal = postorder[postEnd - 1];
+    visize rootIndex;
+    for (visize i = inBeg; i < inEnd; ++i) {
+        if(inorder[i] == rootVal) {
+            rootIndex = i;
+            break;
+        }
+    }
+    visize leftSize = rootIndex - inBeg;
+    visize rightSize = inEnd - rootIndex - 1;
+    TreeNode *root = new TreeNode(rootVal);
+    if(leftSize != 0)
+        root->left = buildTreeHelper(inorder, inBeg, rootIndex, postorder, postBeg, postBeg + leftSize);
+    if(rightSize != 0)
+        root->right = buildTreeHelper(inorder, rootIndex + 1, inEnd, postorder, postBeg + leftSize, postEnd - 1);
+    return root;
+}
+
+TreeNode* buildTree(vector<int> &inorder, vector<int> &postorder) {
+    if(inorder.empty() || postorder.empty() )
+        return nullptr;
+    return buildTreeHelper(inorder, 0, inorder.size() , postorder, 0, postorder.size() );
+}
+
+void testBuildTree() {
+    int a[] = {1, 2, 3};
+    int b[] = {2, 1, 3};
+    vector<int> va(a, a+3);
+    vector<int> vb(b, b+3);
+    TreeNode *root = buildTree(va, vb);
+    BinaryTree tree(root);
+    vector<int> vc = tree.preorderTraversal();
+    cout <<"the tree is : " << endl;
+    printContainer(vc);
+}
 
 

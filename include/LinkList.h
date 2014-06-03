@@ -9,14 +9,17 @@ class LinkList
         LinkList();
         virtual ~LinkList();
         TreeNode *sortedListToBST(ListNode *head);
-        void testListToBST();
+
         ListNode *quickSort();
-        void testQuickSort();
+        ListNode *mergeSort(ListNode *h);
+        ListNode *mergeSortIter();
+        ListNode *insertSort();
 
         friend std::ostream& operator<<(std::ostream& os, const LinkList& alist);
     private:
         ListNode *head;
         ListNode *partitionList(ListNode *first, ListNode *last);
+        std::pair<ListNode*, ListNode *> mergeSortIterHelper(ListNode *first1, ListNode *last1, ListNode *first2, ListNode *last2);
 };
 
 #endif // LINKLIST_H

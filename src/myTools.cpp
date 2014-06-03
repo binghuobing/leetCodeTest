@@ -1,16 +1,15 @@
 #include <vector>
 #include <iostream>
 #include "myTools.h"
+#include <algorithm>
 
 using namespace std;
 
-void printDoubleVector(vector<vector<int> > &dvec)
+void printDoubleVector(const vector<vector<int> > &dvec)
 {
-    for (unsigned i = 0; i < dvec.size(); i++)
+    for(auto vec: dvec)
     {
-        for (unsigned j = 0; j < dvec[i].size(); j++)
-            cout << dvec[i][j] << "  ";
-
+        std::for_each(vec.begin(), vec.end(), [ ] (const int& val) {cout << val << "  "; });
         cout << endl;
     }
 }
